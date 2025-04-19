@@ -1,0 +1,258 @@
+ !DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanglaMart - Premium E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f4f9;
+        }
+
+        /* Header */
+        .header {
+            background: #ff4c3b;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .header .nav-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        /* Banner */
+        .banner {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .banner h1 {
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Product Section */
+        .products {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .products h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card .product-info {
+            padding: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #ff4c3b;
+            margin-bottom: 10px;
+        }
+
+        .product-card button {
+            background: #ff4c3b;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background: #e04334;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #ff4c3b;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .header .search-bar {
+                margin: 10px 0;
+            }
+
+            .banner h1 {
+                font-size: 24px;
+            }
+
+            .products h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">BanglaMart</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Shop the Best Deals in Bangladesh!</h1>
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product 1">
+                <div class="product-info">
+                    <h3>Smartphone X</h3>
+                    <p>৳ 25,000</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product 2">
+                <div class="product-info">
+                    <h3>Fashion T-Shirt</h3>
+                    <p>৳ 1,200</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product 3">
+                <div class="product-info">
+                    <h3>Bluetooth Speaker</h3>
+                    <p>৳ 3,500</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product 4">
+                <div class="product-info">
+                    <h3>Laptop Pro</h3>
+                    <p>৳ 85,000</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 BanglaMart. All Rights Reserved.</p>
+        <p>
+            <a href="#">About Us</a> |
+            <a href="#">Contact</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms & Conditions</a>
+        </p>
+    </div>
+
+    <script>
+        // Basic JavaScript for Add to Cart alert
+        document.querySelectorAll('.product-card button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Product added to cart!');
+            });
+        });
+    </script>
+</body>
+</html>
